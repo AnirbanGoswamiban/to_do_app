@@ -1,0 +1,16 @@
+<%-include("header")-%>
+    <div class="box" id="heading"><h1><%=HEADER%></h1></div>
+    <div class="box">
+        <%for(let i=0;i<new_task.length;i++){%>
+            <div class="item">
+                <input type="checkbox">
+                <p><%=new_task[i]%></p>
+            </div>
+        <%}%>
+    
+<form action="/" class="item" method="post">
+    <input type="text" name="task" placeholder="TASK">
+    <button type="submit" name="btn" value="<%=HEADER%>">+</button>
+</form>
+</div>
+<%-include("header")-%>
